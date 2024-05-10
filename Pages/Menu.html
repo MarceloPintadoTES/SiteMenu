@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Aplicacion Iron</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        margin-top: 0;
+    }
+
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .sidebar li {
+        margin-bottom: 10px;
+    }
+
+    .sidebar li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        background-color: #ddd;
+        border-radius: 5px;
+    }
+
+    .sidebar li ul {
+        display: none;
+        padding-left: 20px;
+    }
+
+    .sidebar li:hover ul {
+        display: block;
+    }
+
+    .sidebar li ul li {
+        margin-bottom: 5px;
+    }
+
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Menu Aplicación Iron</h1>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Producto 1</a></li>
+                    <li><a href="#">Producto 2</a></li>
+                    <li><a href="#">Producto 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Contenido Principal</h2>
+        <p>Bienvenido a la aplicación Iron.</p>
+    </div>
+</div>
+
+</body>
+</html>
